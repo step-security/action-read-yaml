@@ -52,11 +52,11 @@ async function validateSubscription() {
   }
 }
 
-async function execute() {
+async function run() {
   try {
     await validateSubscription();
     const yamlPath = core.getInput("config");
-    const filterPattern = core.getInput("key-path");
+    const filterPattern = core.getInput("key-path-pattern");
     const envPrefix = core.getInput("env-var-prefix");
 
     // Read YAML file contents
@@ -127,4 +127,4 @@ async function execute() {
   }
 }
 
-execute();
+run();
