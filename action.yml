@@ -1,0 +1,24 @@
+name: "action-read-yaml"
+description: "Parses a YAML file and exposes its values as outputs and optional environment variables. Supports variable references and key filtering."
+author: "step-security"
+branding:
+  icon: "settings"
+  color: "green"
+
+inputs:
+  config:
+    description: "Path to the YAML configuration file to read."
+    required: true
+    default: ""
+  key-path:
+    description: "Optional dot-notation or regex pattern to select specific keys from the YAML file."
+    required: false
+    default: ""
+  env-var-prefix:
+    description: "Optional prefix for generated environment variables. Dots in keys are replaced by underscores."
+    required: false
+    default: ""
+
+runs:
+  using: "node20"
+  main: "dist/index.js"

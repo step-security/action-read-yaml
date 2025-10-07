@@ -1,0 +1,16 @@
+{
+  "name": "action-read-yaml",
+  "version": "1.0.0",
+  "description": "Parses a YAML file and exposes its values as outputs and optional environment variables. Supports variable references and key filtering.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist --source-map"
+  },
+  "author": "step-security",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "axios": "^1.12.2",
+    "js-yaml": "^4.1.0"
+  }
+}
