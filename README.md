@@ -1,3 +1,5 @@
+[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
+
 # action-read-yaml
 
 A lightweight GitHub Action that loads data from a YAML file and exposes each key as an output or environment variable.  
