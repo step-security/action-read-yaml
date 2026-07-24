@@ -11,7 +11,7 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "axios": "^1.18.0",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^5.2.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.4"
